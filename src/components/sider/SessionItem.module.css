@@ -16,6 +16,15 @@
     color: var(--dsw-alias-brand-primary-invert);
   }
 
+  /* 菜单打开期间保持悬停态，方便把指针移到菜单上 */
+  &.menuOpen:not(.active) {
+    background-color: var(--dsw-specific-sidebar-nav-item-hover);
+  }
+
+  &.menuOpen .action {
+    display: flex;
+  }
+
   @media (hover: hover) {
     &:not(.active):hover {
       background-color: var(--dsw-specific-sidebar-nav-item-hover);
